@@ -72,6 +72,7 @@
           if (end($url)=='contact' || $url[count($url)-2]=='contact') {include '../components/headerInc/contactHeader.php';}
           if (end($url)=='blog' || $url[count($url)-2]=='blog') {include '../components/headerInc/blogHeader.php';}
           if (end($url)=='page-not-found' || $url[count($url)-2]=='page-not-found') {include '../components/headerInc/pnfHeader.php';}
+          if (end($url)=='th4nkj3ss333usx-you-renewal' || $url[count($url)-2]=='th4nkj3ss333usx-you-renewal' || end($url)=='th4nkj3ss333usx' || $url[count($url)-2]=='th4nkj3ss333usx') {include '../components/headerInc/thankyouHeader.php';}
           // echo $_SERVER['REQUEST_URI']
        ?>
       <!-- <style type="text/css">
