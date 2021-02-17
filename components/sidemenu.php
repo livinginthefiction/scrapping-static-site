@@ -2,7 +2,11 @@
                <div class="burgerBox">
                   <div id="closeIcon" class="burgerBoxInner burgerBoxInnerOut">
                      <div class="iconBox">
+<<<<<<< Updated upstream
                         <span class="burgerIcon cursor-pointer" onclick="hamburgerClick()">
+=======
+                        <span onclick="hamburgerClick()" class="burgerIcon cursor-pointer">
+>>>>>>> Stashed changes
                            <svg class="svg-32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                               <g fill-rule="evenodd">
                                  <path fill="none" d="M0 0h24v24H0z"></path>
@@ -10,7 +14,11 @@
                               </g>
                            </svg>
                         </span>
+<<<<<<< Updated upstream
                         <span class="closeIcon cursor-pointer" onclick="menuClose()">
+=======
+                        <span onclick="menuClose()" class="closeIcon cursor-pointer">
+>>>>>>> Stashed changes
                            <svg class="svg-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                               <path class="dot-fill" d="M19.18 5.18l-.35-.36a.51.51 0 00-.71 0L12 10.94 5.89 4.82a.51.51 0 00-.71 0l-.35.36a.48.48 0 000 .7L11 12l-6.17 6.12a.48.48 0 000 .7l.35.36a.51.51 0 00.71 0L12 13.06l6.11 6.12a.51.51 0 00.71 0l.35-.36a.48.48 0 000-.7L13.07 12l6.11-6.12a.48.48 0 000-.7z"></path>
                            </svg>
