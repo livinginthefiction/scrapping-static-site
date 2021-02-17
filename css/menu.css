@@ -1,5 +1,36 @@
 
 /*Header*/
+.d-lg-none.d-xl-none.hamburger-box{
+  position: fixed;
+    right: 0;
+    margin-right: 10px;
+    z-index: 999999;
+}
+
+.dWRkeg{
+  font-weight: 700;
+  text-align: center;
+  border-radius: 0.3rem;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: background-color 0.3s ease 0s, box-shadow 0.3s ease 0s, color 0.3s ease 0s;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #59BAB0 ;
+  font-size: 0.8125rem;
+  padding: 0.8125rem;
+}
+.dWRkeg:hover, .dWRkeg:active, .dWRkeg:visited, .dWRkeg:focus {
+  text-decoration:none;
+  color:#fff;
+}
+
 header > .logo{
     /* width: 150px; */
     height: auto;
@@ -20,8 +51,8 @@ header > .logo{
     margin: 0 0.7rem;
   }
   .navigation ul a {
-    color: #fff;
-    color: var(--white);
+    color: #000;
+    /* color: var(--white); */
     font-size: .9rem;
     position: relative;
   }
@@ -68,8 +99,9 @@ header > .logo{
   }
   #hamburger {cursor: pointer; cursor: var(--pointer);}
   .dot-fill{
-    fill: #fff;
-   fill: var(--white);
+    /* fill: #fff;
+   fill: var(--white); */
+   fill: black;
   }
   /*sliding menu*/
   .hidden-Slider{
@@ -95,8 +127,9 @@ header > .logo{
     height: 100vh;
     position: absolute;
     z-index: 50;
-    background: #01135a;
-    background: var(--darkSapphire);
+    /* background: #01135a; */
+    /* background: var(--darkSapphire); */
+    background: #d8dcdb;
     width: 50%;
     /* right: 0;
     top: 0;
@@ -207,6 +240,7 @@ header > .logo{
   .menu-title, .menu-dropdown a {
     color: #fff;
     color: var(--white);
+    color: var(--black);
   }
   
   .menu-dropdown a {
@@ -270,7 +304,7 @@ header > .logo{
     top: 0;
     left: -130px;
     right: auto;
-    border-right: 100px solid #00034b;
+    /* border-right: 100px solid #01015d; */
     content: "";
     border-radius: 220%;
   }
@@ -314,7 +348,7 @@ header > .logo{
     transform: translateY(32px);
   }
   .burgerBoxInner.closeMenu:after {
-    border-right: 100px solid #000045;
+    /* border-right: 100px solid #000045; */
   }
   /* .burgerBoxInner.closeMenu svg .dot-fill {
     fill: #041a72;

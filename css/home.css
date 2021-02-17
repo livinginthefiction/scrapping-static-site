@@ -1,10 +1,83 @@
+.stats__item:nth-of-type(1) .stats__item-bar.active:before {
+  content: "SSE";
+}
+.stats__item:nth-of-type(2) .stats__item-bar.active:before {
+  content: "EDF Energy";
+  left: -24px;
+  bottom: 37px;
+}
+.stats__item:nth-of-type(3) .stats__item-bar.active:before {
+  content: "British Gas";
+  left: -19px;
+  bottom: 32px;
+}
+.stats__item:nth-of-type(4) .stats__item-bar.active:before {
+  content: "Symbioenergy";
+  left: -33px;
+  bottom: 44px;
+}
+.stats__item:nth-of-type(5) .stats__item-bar.active:before {
+  content: "E.ON UK";
+  left: -12px;
+  bottom: 26px;
+}
+.stats__item:nth-of-type(6) .stats__item-bar.active:before {
+  content: "ScottishPower";
+  left: -31px;
+  bottom: 44px;
+  /* animation: ScottishPoweranimation 3s infinite; */
+}
+.stats__item:nth-of-type(7) .stats__item-bar.active:before {
+  content: "Npower";
+  left: -8px;
+  bottom: 21px;
+  /* animation: npoweranimation 2s infinite; */
+}
+.stats__item:nth-of-type(8) .stats__item-bar.active:before {
+  content: "Bulb";
+  left: 5px;
+  bottom: 10px;
+  /* animation: bulbanimation 3s infinite; */
+}
+
+@keyframes bulbanimation {
+  0%   {content: "Bulb";}
+  20%   {content: "Bulb";}
+  40%  {content: "Click";}
+  60%  {content: "Here";}
+  80%  {content: "Bulb";}
+  100% {content: "Bulb";}
+}
+
+@keyframes npoweranimation {
+  0%   {content: "Npower";}
+  20%   {content: "Npower";}
+  40%  {content: "Click";}
+  60%  {content: "Here";}
+  80%  {content: "Npower";}
+  100% {content: "Npower";}
+}
+
+@keyframes ScottishPoweranimation {
+  0%   {content: "ScottishPower";}
+  20%   {content: "ScottishPower";}
+  40%  {content: "Click";}
+  60%  {content: "Here";}
+  80%  {content: "ScottishPower";}
+  100% {content: "ScottishPower";}
+}
+
 /*threePillars*/
 .container-box {
    max-width: 1311px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 50px;
-    color: #fff;
+    color: #000;
+}
+
+.abc{
+  color: #59BAB0 ;
 }
 
 .book-block.feed-book, .threePillars-block, .threePillars-item.item3, .recommendation-body {
@@ -30,7 +103,7 @@
     max-height: 50vh;
     max-width: 50vh;
     margin-top: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 400px;
     padding: 40px;
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
@@ -50,7 +123,7 @@
 
 .label {
     margin-bottom: 21px;
-    color: hsla(0,0%,100%,.6);
+    /* color: hsla(0,0%,100%,.6); */
     font-size: 1rem;
 }
 
@@ -127,13 +200,13 @@
     -webkit-transform-origin: 100% 50%;
     -ms-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
-    text-align: left;
+    text-align: center;
 }
 .threePillars-item .w-hidden-small {
   transition: all 1.5s linear;
 }
 .threePillars-item h4{
-  color: #50c878;
+  color: #59BAB0;
   color: var(--emerald-green);
   font-weight: bold;
 }
@@ -155,7 +228,7 @@
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     border-radius: 100%;
-    background-color: #50c878;
+    background-color: #59BAB0;
     background-color: var(--emerald-green);
 }
 
@@ -245,6 +318,50 @@
   height: 100%;
   background-size: cover;
 }
+
+
+@media (max-width: 414px){
+  .ms--images .ms-slide__image {
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+    padding-right: 73px;
+    padding-left: 73px;
+  }
+}
+
+/* @media (max-width: 1920px){
+  img#l4 {
+    max-height: 80px;
+}
+  .queen-proof .highlight__info p {
+    font-size: 1.7rem;
+    width: 544px;
+  }
+
+} */
+
+@media (max-width: 375px){
+  .ms--images .ms-slide__image {
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    padding-right: 94px;
+    padding-left: 92px;
+  }
+}
+
+@media (max-width: 320px){
+  .ms--images .ms-slide__image {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    padding-right: 121px;
+    padding-left: 121px;
+  }
+}
+
+
 .ms--numbers {
   position: relative;
   overflow: hidden;
@@ -479,7 +596,8 @@
     display: none;
 }
 .quote-split__options {
-    font-family: futura-pt-condensed,sans-serif;
+    /* font-family: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; futura-pt-condensed,sans-serif; */
+    font-family: Poppins, sans-serif; /* futura-pt-condensed,sans-serif; */
     font-weight: 700;
 }
 .quote-split__home {
@@ -515,7 +633,8 @@
 }
 .quote-split h2 {
     margin-top: 0;
-    font-family: futura-pt-condensed,sans-serif;
+    /* font-family: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;  */
+    font-family: Poppins, sans-serif; 
     font-weight: 700;
     font-size: 1.6875rem;
     line-height: 1;
@@ -545,7 +664,8 @@
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 1.3;
-    font-family: futura-pt-condensed,sans-serif;
+    /* font-family: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; futura-pt-condensed,sans-serif; */
+    font-family: Poppins, sans-serif;
     min-width: 190px;
 }
 .d-inline-block {
@@ -627,7 +747,8 @@ img {
 
 .quote-split h2 {
     margin-top: 0;
-    font-family: futura-pt-condensed,sans-serif;
+    /* font-family: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;  futura-pt-condensed,sans-serif; */
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 1.6875rem;
     line-height: 1;
@@ -737,7 +858,7 @@ img {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  top: 60px;
+  top: 46px;   /*60px*/
 }
 
 .page-queen .queen-proof .highlight__text, .page-queen .queen-proof .pic_small-wrap-left, .page-queen .queen-proof .video-text {
@@ -758,8 +879,8 @@ img {
 }
 .queen-proof .highlight__text-title {
     /* font-size: 55px; */
-    line-height: 70px;
-    color: #50c878;
+    line-height: 40px;
+    color: #59BAB0;
     color: var(--emerald-green);
     /* margin-top: 20px; */
     margin-top: 55px;
@@ -778,9 +899,11 @@ img {
 .queen-proof .highlight__info p {
   /* font-size: 1.4rem; */
   line-height: 2.375rem;
-  color: #fff;
+  color: #000;
+  /*word-break: break-all;*/
   /* text-transform: uppercase; */
-  font-family: futura-pt-condensed,sans-serif;
+  /* font-family: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; futura-pt-condensed,sans-serif; */
+  font-family: Poppins, sans-serif; /* futura-pt-condensed,sans-serif; */
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -864,7 +987,7 @@ img {
 .inner-title-stroke {
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #000;
 }
 .text-create-row span {
   padding-right: 5vw;
@@ -896,9 +1019,10 @@ img {
 }
 .text-service-row-div span a {
   display: inline-table;
-  color: #50c878;
+  color: #59BAB0;
   color: var(--emerald-green);
   text-decoration: none;
+  padding: 0 10px;
 }
 .text-service-row-div span a:after {
   content: "";
@@ -910,7 +1034,7 @@ img {
   transition: 0.5s ease all;
 }
 .text-service-row-div span a.text-white:after{
-  background-color: #50c878;
+  background-color: #59BAB0;
   background-color: var(--emerald-green);
 }
 
@@ -1065,6 +1189,7 @@ display: -webkit-box;
   padding: 11px 34px;
   background-color: #01135a;
   background-color: var(--darkSapphire);
+  background-color: var(--black);
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
@@ -1091,6 +1216,17 @@ display: -webkit-box;
   opacity: 1;
   height: auto;
   transform: translateY(0);
+}
+
+@media (min-width: 1920px){
+  img#l4 {
+    max-height: 80px;
+}
+  .queen-proof .highlight__info p {
+    font-size: 1.7rem;
+    width: 544px;
+  }
+
 }
 
 @media screen and (max-width: 991px){
@@ -1124,7 +1260,7 @@ display: -webkit-box;
   font-size: 40px;
 }
 .h2, h2 {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 }
@@ -1155,6 +1291,7 @@ display: -webkit-box;
   font-family: 'Allura', fantasy, Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; 
   right: 2rem;
   top: -5rem;
+  color: #fff;
 }
 .video-box img{
   width: 100%;
@@ -1279,13 +1416,13 @@ display: -webkit-box;
     transition: transform .8s ease,opacity .8s ease,-webkit-transform .8s ease;
 }
 .quote-split__options__title--left {
-    color: #fff;
-    -webkit-text-fill-color: transparent;
+    color: #000;
+    /* -webkit-text-fill-color: transparent; */
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #000;
 }
 .quote-split__options__title {
-    color: #fff;
+    color: #000;
     display: inline-block;
     position: relative;
     text-transform: uppercase;
@@ -1463,10 +1600,13 @@ right: 2vw;
     position: absolute;
     bottom: -10px;
     left: calc(100% + 3px);
-    width: 146px;
+    /* width: 146px; */
+    width: 111px;
     height: 100%;
-    -webkit-transform: translateX(-50%) rotate(-3deg);
-    transform: translateX(-50%) rotate(-3deg);
+    /* -webkit-transform: translateX(-50%) rotate(-3deg);
+    transform: translateX(-50%) rotate(-3deg); */
+    -webkit-transform: translateX(-48%) rotate(0deg);
+    transform: translateX(-48%) rotate(0deg);    
     z-index: 1;
 }
 .quote-split__business, .quote-split__business>.quote-split__container {
@@ -2029,6 +2169,12 @@ will-change: transform;
   .queen-proof .pic_small-wrap-left .pic_big {
     /* height: 30vh; */
     min-height: 230px;
+}
+.queen-proof .highlight__text-title{
+  margin-top:300px;
+}
+.queen-proof .pic_small-wrap-left .pic_big{
+  top:290px;
 }
 
 .our_promises div{
@@ -3271,7 +3417,7 @@ will-change: transform;
           transform-origin: center bottom;
   -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  box-shadow: 10px 15px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 10px 15px rgba(0, 0, 0, 0.2); */
 }
 .stats__item-bar.active {
   -webkit-transform: none;
@@ -3314,7 +3460,7 @@ will-change: transform;
   /* -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); */
   text-align: center;
-  background: #4c2e34;
+  background: #59BAB0 ;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -3370,13 +3516,16 @@ will-change: transform;
   margin: 0 0 0 12.5px;
 }
 .stats__item-bar.symbio_bar.active {
-  background: #50c878;
+  background: #59BAB0 ;
 }
 .stats__item-bar.symbio_bar.active:before {
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 690px) {
+
+
+
   .stats {
     width: 100%;
     min-height: 600px;
@@ -3393,49 +3542,49 @@ will-change: transform;
             margin-bottom: 25px;
   }
   .stats__item:nth-of-type(1) .stats__item-bar {
-    width: 65%;
+    width: 75%;
     height: 30px;
     -webkit-transition-delay: 0.1s;
             transition-delay: 0.1s;
   }
   .stats__item:nth-of-type(2) .stats__item-bar {
-    width: 56%;
+    width: 66%;
     height: 30px;
     -webkit-transition-delay: 0.2s;
             transition-delay: 0.2s;
   }
   .stats__item:nth-of-type(3) .stats__item-bar {
-    width: 50%;
+    width: 85%;
     height: 30px;
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s;
   }
   .stats__item:nth-of-type(4) .stats__item-bar {
-    width: 32%;
+    width: 53%;
     height: 30px;
     -webkit-transition-delay: 0.4s;
             transition-delay: 0.4s;
   }
   .stats__item:nth-of-type(5) .stats__item-bar {
-    width: 38%;
+    width: 68%;
     height: 30px;
     -webkit-transition-delay: 0.5s;
             transition-delay: 0.5s;
   }
   .stats__item:nth-of-type(6) .stats__item-bar {
-    width: 32.1%;
+    width: 72.1%;
     height: 30px;
     -webkit-transition-delay: 0.6s;
             transition-delay: 0.6s;
   }
   .stats__item:nth-of-type(7) .stats__item-bar {
-    width: 51%;
+    width: 66%;
     height: 30px;
     -webkit-transition-delay: 0.7s;
             transition-delay: 0.7s;
   }
   .stats__item:nth-of-type(8) .stats__item-bar {
-    width: 50.1%;
+    width: 80.1%;
     height: 30px;
     -webkit-transition-delay: 0.8s;
             transition-delay: 0.8s;
@@ -3698,6 +3847,55 @@ button.inner-btn:hover {
   button.inner-btn {
     padding: 4px;
   }
+
+
+
+
+
+
+  .stats__item:nth-of-type(1) .stats__item-bar.active:before {
+  content: "SSE";
+}
+.stats__item:nth-of-type(2) .stats__item-bar.active:before {
+  content: "EDF Energy";
+  left: 2px;
+  bottom: 3px;
+}
+.stats__item:nth-of-type(3) .stats__item-bar.active:before {
+  content: "British Gas";
+  left: 2px;
+  bottom: 3px;
+}
+.stats__item:nth-of-type(4) .stats__item-bar.active:before {
+  content: "Symbioenergy";
+  left: 4px;
+  bottom: 5px;
+}
+.stats__item:nth-of-type(5) .stats__item-bar.active:before {
+  content: "E.ON UK";
+  left: 1px;
+  bottom: 2px;
+}
+.stats__item:nth-of-type(6) .stats__item-bar.active:before {
+  content: "ScottishPower";
+  left: 3px;
+  bottom: 5px;
+  /* animation: ScottishPoweranimation 3s infinite; */
+}
+.stats__item:nth-of-type(7) .stats__item-bar.active:before {
+  content: "Npower";
+  left: 1px;
+  bottom: 2px;
+  /* animation: npoweranimation 3s infinite; */
+  
+}
+.stats__item:nth-of-type(8) .stats__item-bar.active:before {
+  content: "Bulb";
+  left: 3px;
+  bottom: 1px;
+  /* animation: bulbanimation 3s infinite; */
+}
+
 }
 
 
@@ -3745,7 +3943,8 @@ button.inner-btn:hover {
     font-size: 2.2rem;
   }
   .highlight--not-full-height{
-    padding: 0;
+    /* padding: 0; */
+    padding-top: 10px;
   }
   .container-box {
     padding-top: 0px;
@@ -3760,4 +3959,213 @@ button.inner-btn:hover {
   .circle-shape {
     font-size: .55rem;
   }
+}
+
+
+.getquote{
+      background: none;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    z-index: 2;
+    font-weight: 100;
+    letter-spacing: 1px;
+    max-width: 115px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.getquote canvas{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+  
+  .act{
+    height: 130vh; 
+  }
+  
+  .act3{
+    height: 205vh;
+  }
+  
+  .footerLogo{
+    padding-top: 250px;
+  }
+  
+  }
+
+@media (min-width: 375px) and (max-width: 425px) {
+
+.act1{
+  height: 210vh;
+}
+
+.act{
+  height: 105vh; /* Previously it was 90*/
+  padding-bottom: 140px;
+}
+
+.act2{
+  /* height: 110vh; */
+  height: auto;
+}
+
+.act3{
+  height: 175vh;
+  padding-bottom: 170px;
+}
+
+.footerLogo{
+  padding-top: 100px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+  .highlight{
+    height: auto;
+  }
+
+  .act1{
+    height: 180vh;
+  }
+
+  .container-box
+  {
+    /* height: 932px; */
+    height: 1100px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+
+   .highlight{
+    height: auto;
+  } 
+
+  .running-text{
+    height: auto;
+  }
+
+  .quote-split{
+    max-height: 800px;
+  }
+
+  .quote-split__options{
+    top: 30vh;
+  }
+
+  .quote-split__image{
+    top: 70vh;
+  }
+
+  .quote-split__home .quote-split-container-helper:before{
+    bottom: 460px;
+  } 
+}
+
+@media (min-width: 1920px){
+  .act{
+    height: 0vh;
+    margin-bottom: 30vh;
+  }
+  /*.action{
+    height: 90vh;
+  }*/
+  .main-title{
+    font-size: 70px;
+  }
+  .sub-title{
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1900px) {
+  .action{
+    height: 85vh;
+  }
+}
+
+/* 
+@media (max-width: 1024px) {
+  .highlight{
+    height: 0vh;
+  }
+
+  .running-text{
+    height: 0vh;
+  }
+
+  .quote-split{
+    max-height: 800px;
+  }
+
+  .quote-split__options{
+    top: 30vh;
+  }
+
+  .quote-split__image{
+    top: 37vh;
+  }
+
+  .quote-split__home{
+    top: 0vh;
+  }
+} */
+
+.clickEffect{
+  animation: 1s linear 0s infinite normal none running clickJitter;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+}
+ 
+.clickEffectImg{
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  width: 0.7em;
+  height: auto;
+  animation: 1s linear 0s infinite normal none running clickJitter2;
+}
+ 
+@media only screen and (max-width: 425px) {
+  .clickEffect{animation: 2s linear 0s infinite normal none running clickJittermob425;} 
+  .clickEffectImg{animation: 2s linear 0s infinite normal none running clickJitter2mob425;}
+}
+ 
+@keyframes clickJitter {
+  0%   {top:50%;}
+  45%   {top:-180%;}
+  50%   {opacity: 1;width: 0.5em;height: 0.5em;margin: -0.25em;border-width: 0.5em;top:-180%;}
+  100% {opacity: 0.2;width: 5em;height: 5em;margin: -2.5em;border-width: 0.03em;top:-180%;}
+}
+@keyframes clickJitter2 {
+  0%   {top:50%;}
+  45%   {top:-150%;}
+  100%   {top:-150%;}
+}
+ 
+@keyframes clickJittermob425 {
+  0%   {top:50%;}
+  45%   {top:-1100%;}
+  50%   {opacity: 1;width: 0.5em;height: 0.5em;margin: -0.25em;border-width: 0.5em;top:-1100%;}
+  100% {opacity: 0.2;width: 5em;height: 5em;margin: -2.5em;border-width: 0.03em;top:-1100%;}
+}
+@keyframes clickJitter2mob425 {
+  0%   {top:50%;}
+  45%   {top:-1100%;}
+  100%   {top:-1100%;}
 }

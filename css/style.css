@@ -3,7 +3,8 @@
     --darkSapphire: #01135a;
     --darkerSapphire: #000045;
     --green-cyan: #00A56F;
-    --emerald-green: #50c878;
+    /* --emerald-green: #59BAB0; */
+    --emerald-green: #59BAB0 ;
     --white: #fff;
     --white-smoke: #f5f5f5;
     --whisper: #eaeaea;
@@ -12,7 +13,7 @@
     --light-sky: #6692CC;
     --black: #000;
     --light-b-pink-red: #dd0842;
-    --Poppins: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --Poppins: Poppins, sans-serif;
     --YesevaOne: Yeseva One, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     --Oswald: Oswald, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     --border-radius5: 5px;
@@ -31,15 +32,15 @@ html, body {
  /* overflow-x: hidden; */
 }
 body {
-  font-family: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  /* font-family: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; */
   font-family: var(--Poppins);
   background-color: #000045;
-  background-color: var(--darkerSapphire);
+  background-color: #d8dcdb;
   background-image: url(../images/background_light.png), url(../images/background_pattern.png);
   background-repeat: repeat-y,repeat;
   /* background-size: contain,100px 100px; */
   background-size: contain, 300px 300px;
-    color: #fff;
+    color: #000;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -48,7 +49,7 @@ body {
 }
 .pattern-bg{
   background-image: none;
-  background-image: url(../images/background_light.png);
+  /* background-image: url(../images/background_light.png); */
 }
 /* allura-regular - latin */
 @font-face {
@@ -89,10 +90,14 @@ body {
 .font-size-1pt6rem {font-size: 1.6rem;}
 .font-size-1pt7rem {font-size: 1.7rem;}
 .font-size-1pt8rem {font-size: 1.8rem;}
-.font-size-3pt5rem {font-size: 3.3rem;}
+.font-size-3pt5rem {font-size: 2.3rem;}
 .font-size-7rem {font-size: 7rem;}
 
-.font-family-san-serif{font-family: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;}
+.font-family-san-serif{
+  /* font-family: Poppins, Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; */
+  font-family: Poppins, sans-serif;
+
+}
 
 .cursor-pointer {cursor: pointer;}
 
@@ -102,13 +107,21 @@ body {
 }
 
 .emerald-green {
-  color: #50c878;
+  color: #59BAB0;
   color: var(--emerald-green);
 }
 .text-underline {
   text-decoration: underline;
   text-decoration: var(--underline);
 }
+
+/* cookie banner */
+.cookieBanner{
+  max-width: 24em ;z-Index:5000;background-color: #ebebeb;color: black;position:fixed;bottom:1em;left:1em;
+}
+/* cookie banner */
+
+
 /*Button trans*/
 .buttonRect .link_button {
   display: block;
@@ -120,10 +133,48 @@ body {
   line-height: 2;
   position: relative;
   text-transform: uppercase;
-  color: #fff;
-  color: var(--white);
+  color: #000;
+  /* color: var(--white); */
   text-decoration: none;
   text-decoration: var(--none);
+}
+.glow {
+  /* position:relative;
+  top:40%;
+  left:50%; */
+  position:absolute;
+  top:-5%;
+
+  transform:translate(-50%, -50%);
+  width:110px;
+  height:50px;
+  text-align:center;
+  line-height:48px;
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-family:sans-serif;
+  box-sizing:border-box;
+  background:linear-gradient(98deg, green, blue, red, green);
+  background-size:400%;
+  border-radius:20px 0px;
+  z-index:1;
+  animation:animate 8s linear infinite;
+}
+
+.glow:hover{
+  color: white !important;
+  text-decoration: none !important;
+}
+
+@keyframes animate{
+0%{
+    background-position:0%;
+}
+100%{
+    background-position:400%;
+}
 }
 .buttonRect svg {
     position: absolute;
@@ -148,6 +199,7 @@ body {
 .buttonRect svg linearGradient > stop:nth-child(3){
   transition: stop-opacity 0.5s ease-in-out;
 } */
+/*
 .buttonRect:hover svg linearGradient > stop:nth-child(2), .hoverElect:hover svg linearGradient > stop:nth-child(2), 
 .buttonRect:hover svg linearGradient > stop:nth-child(3), .hoverElect:hover svg linearGradient > stop:nth-child(3){
   animation: 1s stopOpacity 1 forwards;
@@ -166,6 +218,47 @@ body {
     stop-opacity: 1;
   }
 }
+*/
+.buttonRect svg linearGradient > stop:nth-child(2), .hoverElect svg linearGradient > stop:nth-child(2), 
+.buttonRect svg linearGradient > stop:nth-child(3), .hoverElect svg linearGradient > stop:nth-child(3){
+  animation: stopOpacity 1s infinite;
+  -webkit-animation: stopOpacity 1s infinite;
+  -moz-animation: stopOpacity 1s infinite;
+  
+}
+@keyframes stopOpacity{
+  10%{
+    stop-opacity: 0;
+  }
+  20%{
+    stop-opacity: 0.3;
+  }
+  30%{
+    stop-opacity: 0.7;
+  }
+  50%{
+    stop-opacity: 1;
+  }
+  70%{
+    stop-opacity: 0.7;
+  }
+  80%{
+    stop-opacity: 0.3;
+  }
+  100%{
+    stop-opacity: 0;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .cookieBanner {
+    max-width: 100%;
+    bottom: 45px;
+    left: 0;
+  }
+}
+
 /*Min - 576px*/
 @media (min-width: 576px) {
   /* .container {max-width: 540px;} */
@@ -177,6 +270,36 @@ body {
   .ms-slide .buttonRect .link_button{
     padding: 1rem 1.6rem;
   }
+
+  .glow{
+    /* position:relative;
+    top:40%;
+    left:50%; */
+    position:absolute;
+    top:-40%;
+    transform:translate(-50%, -50%);
+    width:140px;
+    height:50px;
+    text-align:center;
+    line-height:48px;
+    color:#fff;
+    font-size:16px;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-family:sans-serif;
+    box-sizing:border-box;
+    background:linear-gradient(98deg, green, blue, red, green);
+    background-size:400%;
+    border-radius:20px 0px;
+    z-index:1;
+    animation:animate 8s linear infinite;
+  }
+
+  .glow:hover{
+    color: white !important;
+    text-decoration: none !important;
+  }
+  
 }
 
 .checkBox-cover .checkbox {
