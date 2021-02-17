@@ -1,4 +1,4 @@
-<footer class="footer pull-left w-100 withGradient">
+<footer class="footer float-left w-100 withGradient">
                <div class="footerLogo"><img src="./images/symbio-logo-2.png" alt="Symbio Energy" title="Symbio Energy"></div>
                <div class="footer-container">
                   <ul class="primaryLinks martell_1eMk3 medium uppercase_f_m9E mongoose_3S35Z">
