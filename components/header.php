@@ -70,6 +70,7 @@
           $url=explode('/',$_SERVER['REQUEST_URI']);
           if (end($url)=='about-symbio' || $url[count($url)-2]=='about-symbio') {include '../components/headerInc/aboutHeader.php';}
           if (end($url)=='contact' || $url[count($url)-2]=='contact') {include '../components/headerInc/contactHeader.php';}
+          if (end($url)=='blog' || $url[count($url)-2]=='blog') {include '../components/headerInc/blogHeader.php';}
           // echo $_SERVER['REQUEST_URI']
        ?>
       <!-- <style type="text/css">

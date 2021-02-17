@@ -72,6 +72,7 @@
       <?php
           $url=explode('/',$_SERVER['REQUEST_URI']);
           if (end($url)=='about-symbio' || $url[count($url)-2]=='about-symbio') {include '../components/footerInc/aboutFooter.php';}
+          if (end($url)=='blog' || $url[count($url)-2]=='blog') {include '../components/footerInc/blogFooter.php';}
        ?>
   </body>
 </html>
