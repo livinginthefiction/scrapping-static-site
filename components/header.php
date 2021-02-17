@@ -71,6 +71,7 @@
           if (end($url)=='about-symbio' || $url[count($url)-2]=='about-symbio') {include '../components/headerInc/aboutHeader.php';}
           if (end($url)=='contact' || $url[count($url)-2]=='contact') {include '../components/headerInc/contactHeader.php';}
           if (end($url)=='blog' || $url[count($url)-2]=='blog') {include '../components/headerInc/blogHeader.php';}
+          if (end($url)=='page-not-found' || $url[count($url)-2]=='page-not-found') {include '../components/headerInc/pnfHeader.php';}
           // echo $_SERVER['REQUEST_URI']
        ?>
       <!-- <style type="text/css">
