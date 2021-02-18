@@ -7,7 +7,7 @@
       <h1 class="font-weight-bolder text-center text-uppercase text-white font-family-san-serif font-size-3pt5rem px-3">Page Not Found</h1>
    </section>
    <section class="py-3 row">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left" style="float: inherit;">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pull-left" style="float: inherit;">
          <section class="page_404">
             <div class="container">
                <div class="row">

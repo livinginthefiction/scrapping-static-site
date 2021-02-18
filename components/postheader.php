@@ -6,12 +6,12 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="theme-color" content="#000000">
-      <!-- <link rel="apple-touch-icon" href="/logo192.png"> -->
+      <link rel="apple-touch-icon" href="/logo192.png">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="../css/style.css">
-      <link rel="stylesheet" href="../css/menu.css">
-      <link rel="stylesheet" href="../css/footer.css">
-      <link rel="stylesheet" href="../css/timeline.css">
+      <link rel="stylesheet" href="../../css/style.css">
+      <link rel="stylesheet" href="../../css/menu.css">
+      <link rel="stylesheet" href="../../css/footer.css">
+      <link rel="stylesheet" href="../../css/timeline.css">
       
       <style>.text-dark{color:#000!important}.buttonCanvas{background:0 0;padding:20px;border-radius:50px;position:relative;color:#fff;text-decoration:none;z-index:2;font-weight:100;letter-spacing:1px;max-width:133px;display:flex;align-items:center;font-size:18px}.buttonCanvas:hover{color:#fff;text-decoration:none}.buttonCanvas canvas{position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);z-index:-1} .buttonRect svg linearGradient > stop:nth-child(2), .hoverElect svg linearGradient > stop:nth-child(2), 
          .buttonRect svg linearGradient > stop:nth-child(3), .hoverElect svg linearGradient > stop:nth-child(3){
@@ -72,35 +72,12 @@
           if (end($url)=='contact' || $url[count($url)-2]=='contact') {include '../components/headerInc/contactHeader.php';}
           if (end($url)=='blog' || $url[count($url)-2]=='blog') {include '../components/headerInc/blogHeader.php';}
           if (end($url)=='page-not-found' || $url[count($url)-2]=='page-not-found') {include '../components/headerInc/pnfHeader.php';}
-<<<<<<< Updated upstream
-          if (end($url)=='th4nkj3ss333usx-you-renewal' || $url[count($url)-2]=='th4nkj3ss333usx-you-renewal' || end($url)=='th4nkj3ss333usx' || $url[count($url)-2]=='th4nkj3ss333usx') {include '../components/headerInc/thankyouHeader.php';}
-          if (end($url)=='faqs' || $url[count($url)-2]=='faqs') {include '../components/headerInc/faqHeader.php';}
-          if (end($url)=='useful-link' || $url[count($url)-2]=='useful-link') {include '../components/headerInc/usefulHeader.php';}
-          if (end($url)=='case-study' || $url[count($url)-2]=='case-study') {include '../components/headerInc/csHeader.php';}
-          if (end($url)=='privacy-policy-cookies' || $url[count($url)-2]=='privacy-policy-cookies') {include '../components/headerInc/privacyHeader.php';}
-          if (end($url)=='complaints' || $url[count($url)-2]=='complaints') {include '../components/headerInc/complaintsHeader.php';}
-          if (end($url)=='terms-and-conditions' || $url[count($url)-2]=='terms-and-conditions') {include '../components/headerInc/tncHeader.php';}
-          if (end($url)=='arrangements-for-site-access' || $url[count($url)-2]=='arrangements-for-site-access') {include '../components/headerInc/afscHeader.php';}
-          if (end($url)=='tariff-info' || $url[count($url)-2]=='tariff-info') {include '../components/headerInc/tarrifHeader.php';}
-          if (end($url)=='emergencies' || $url[count($url)-2]=='emergencies') {include '../components/headerInc/emergenciesHeader.php';}
-          if (end($url)=='energy-debt-management' || $url[count($url)-2]=='energy-debt-management') {include '../components/headerInc/edmHeader.php';}
-          if (end($url)=='our-fuel-mix' || $url[count($url)-2]=='our-fuel-mix') {include '../components/headerInc/ofmHeader.php';}
-          if (end($url)=='guides' || $url[count($url)-2]=='guides') {include '../components/headerInc/guidesHeader.php';}
-          if (end($url)=='priority-service-register' || $url[count($url)-2]=='priority-service-register') {include '../components/headerInc/psrHeader.php';}
-          if (end($url)=='how-to-calculate-your-electricity-usage' || $url[count($url)-2]=='how-to-calculate-your-electricity-usage') {include '../components/headerInc/hceuHeader.php';}
-          if (end($url)=='reasons-forhighenergy-bills' || $url[count($url)-2]=='reasons-forhighenergy-bills') {include '../components/headerInc/hebHeader.php';}
-          if (end($url)=='how-do-i-find-my-mpan-number-on-my-electricity-meter' || $url[count($url)-2]=='how-do-i-find-my-mpan-number-on-my-electricity-meter') {include '../components/headerInc/mpansHeader.php';}
-          if (end($url)=='how-to-read-your-energy-bill' || $url[count($url)-2]=='how-to-read-your-energy-bill') {include '../components/headerInc/rebHeader.php';}
-          if (end($url)=='disclaimer' || $url[count($url)-2]=='disclaimer') {include '../components/headerInc/disclaimerHeader.php';}
-
-=======
           if (end($url)=='useful-link' || $url[count($url)-2]=='useful-link') {include '../components/headerInc/usefulHeader.php';}
           if (end($url)=='business' || $url[count($url)-2]=='business') {include '../components/headerInc/businessHeader.php';}
           if (end($url)=='residential' || $url[count($url)-2]=='residential') {include '../components/headerInc/residentialHeader.php';}
           if (end($url)=='why-symbio' || $url[count($url)-2]=='why-symbio') {include '../components/headerInc/whyHeader.php';}
->>>>>>> Stashed changes
           // echo $_SERVER['REQUEST_URI']
-       ?>
+      //  ?>
       <!-- <style type="text/css">
       iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style> -->
    </head>

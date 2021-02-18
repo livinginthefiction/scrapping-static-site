@@ -715,8 +715,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #041a72;
-    background-color: var(--sapphire);
+    background-color: #59bab0;
+    /* background-color: var(--sapphire); */
     width: 40px;
     height: 40px;
     border-radius: 999999px;
